@@ -5,8 +5,10 @@
   margin-right: auto;
   padding-top: 20px;
 
+  overflow: hidden;
   border-radius: 20px;
   background-color: beige;
+  border: 1px solid gray;
 }
 
 .description {
@@ -26,10 +28,10 @@
 }
 
 .name {
+  margin-bottom: 15px;
+
   font-size: 20px;
   font-weight: bold;
-
-  margin-bottom: 15px;
 }
 
 .tag {
@@ -46,6 +48,7 @@
   justify-content: space-between;
 
   background-color: bisque;
+  border-top: 1px solid gray;
 }
 
 .stats > li {
@@ -54,17 +57,17 @@
   align-items: center;
   flex-basis: 33.3%;
   padding: 10px 0;
-  border: 1px solid gray;
+}
+
+.stats > li:not(:last-child) {
+  border-right: 1px solid gray;
 }
 
 .label {
-
-
   margin-bottom: 5px;
 }
 
 .quantity {
-
   font-weight: bold;
 }
 
